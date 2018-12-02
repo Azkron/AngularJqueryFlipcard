@@ -1,0 +1,27 @@
+.flip3D .front {
+  position: absolute;
+  transform: perspective(600px) rotateY(0deg);
+  background: sandybrown;
+  width: 240px;
+  height: 200px;
+  border-radius: 7px;
+  backface-visibility: hidden;
+  transition: transform .5s linear 0s;
+}
+.flip3D .back {
+  position: absolute;
+  transform: perspective(600px) rotateY(180deg);
+  background: aqua;
+  width: 240px;
+  height: 200px;
+  border-radius: 7px;
+  backface-visibility: hidden;
+  transition: transform .5s linear 0s;
+}
+.flip3D {
+  display:block;
+  width: 240px;
+  height: 200px;
+  margin: 10px;
+  float: left;
+}
